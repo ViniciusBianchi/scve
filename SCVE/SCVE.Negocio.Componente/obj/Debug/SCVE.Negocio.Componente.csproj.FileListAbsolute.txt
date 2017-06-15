@@ -1,0 +1,9 @@
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\bin\Debug\SCVE.Negocio.Componente.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\bin\Debug\SCVE.Negocio.Componente.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\bin\Debug\EntityFramework.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\bin\Debug\EntityFramework.xml
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\obj\Debug\SCVE.Negocio.Componente.csprojResolveAssemblyReference.cache
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\obj\Debug\SCVE.Negocio.Componente.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\obj\Debug\SCVE.Negocio.Componente.pdb

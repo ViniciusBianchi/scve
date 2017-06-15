@@ -1,0 +1,10 @@
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Persistencia\bin\Debug\SCVE.Persistencia.dll.config
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Persistencia\bin\Debug\SCVE.Persistencia.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Persistencia\bin\Debug\SCVE.Persistencia.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Persistencia\bin\Debug\EntityFramework.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Persistencia\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Persistencia\bin\Debug\EntityFramework.xml
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Persistencia\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Persistencia\obj\Debug\SCVE.Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Persistencia\obj\Debug\SCVE.Persistencia.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Persistencia\obj\Debug\SCVE.Persistencia.pdb

@@ -1,0 +1,5 @@
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Aplicacao\bin\Debug\SCVE.Negocio.Aplicacao.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Aplicacao\bin\Debug\SCVE.Negocio.Aplicacao.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Aplicacao\obj\Debug\SCVE.Negocio.Aplicacao.csprojResolveAssemblyReference.cache
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Aplicacao\obj\Debug\SCVE.Negocio.Aplicacao.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Aplicacao\obj\Debug\SCVE.Negocio.Aplicacao.pdb
