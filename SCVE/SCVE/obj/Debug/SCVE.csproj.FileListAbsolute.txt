@@ -78,3 +78,5 @@ C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\pt-br\System.Web.WebPages.Razor.resources.
 C:\Users\vinic\TCC\scve\SCVE\SCVE\obj\Debug\SCVE.csprojResolveAssemblyReference.cache
 C:\Users\vinic\TCC\scve\SCVE\SCVE\obj\Debug\SCVE.dll
 C:\Users\vinic\TCC\scve\SCVE\SCVE\obj\Debug\SCVE.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\SCVE.Negocio.Aplicacao.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\SCVE.Negocio.Aplicacao.pdb

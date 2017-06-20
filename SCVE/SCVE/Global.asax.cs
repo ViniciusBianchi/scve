@@ -1,4 +1,7 @@
-﻿using System;
+﻿using SCVE.App_Start;
+using Ninject;
+using Ninject.Syntax;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +19,7 @@ namespace SCVE
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            IocConfig.ConfigurarDependencias();
         }
     }
 }
