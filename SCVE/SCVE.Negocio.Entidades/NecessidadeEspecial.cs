@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace SCVE.Negocio.Entidades
 {
-    public class Raca
+    public class NecessidadeEspecial
     {
-        public virtual int RacaId { get; set; }
+        public virtual int NecessidadeEspecialId { get; set; }
+        public virtual Candidato Candidato { get; set; }
         public virtual string Descricao { get; set; }
 
         #region Comparar Membros
@@ -20,17 +21,19 @@ namespace SCVE.Negocio.Entidades
             if (obj == this)
                 return true;
 
-            if (!(obj is Raca))
+            if (!(obj is NecessidadeEspecial))
                 return false;
 
-            Raca outro = (Raca)obj;
-            return RacaId.Equals(outro.RacaId);
+            NecessidadeEspecial outro = (NecessidadeEspecial)obj;
+            return NecessidadeEspecialId.Equals(outro.NecessidadeEspecialId);
         }
 
         public override int GetHashCode()
         {
-            return RacaId.GetHashCode();
+            return NecessidadeEspecialId.GetHashCode();
         }
-        #endregion Comparar Membros
+
+
+        #endregion Compare Members
     }
 }

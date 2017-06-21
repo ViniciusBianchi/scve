@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace SCVE.Negocio.Entidades
 {
-    public class InstituicaoEnsino
+    public class OutroCurso
     {
-        public virtual int InstituicaoEnsinoId { get; set; }
+        public virtual int OutroCursoId { get; set; }
+        public virtual Candidato Candidato { get; set; }
         public virtual string Nome { get; set; }
-        public virtual int Nivel { get; set; }
-        public virtual bool Status { get; set; }
+        public virtual int? AnoConclusao { get; set; }
 
         #region Comparar Membros
+
         public override bool Equals(object obj)
         {
             if (obj == null)
@@ -22,17 +23,18 @@ namespace SCVE.Negocio.Entidades
             if (obj == this)
                 return true;
 
-            if (!(obj is InstituicaoEnsino))
+            if (!(obj is OutroCurso))
                 return false;
 
-            InstituicaoEnsino outro = (InstituicaoEnsino)obj;
-            return InstituicaoEnsinoId.Equals(outro.InstituicaoEnsinoId);
+            OutroCurso outro = (OutroCurso)obj;
+            return OutroCursoId.Equals(outro.OutroCursoId);
         }
 
         public override int GetHashCode()
         {
-            return InstituicaoEnsinoId.GetHashCode();
+            return OutroCursoId.GetHashCode();
         }
+
         #endregion Comparar Membros
     }
 }

@@ -42,6 +42,8 @@ C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\pt-br\System.Web.Optimization
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\obj\Debug\SCVE.Testes.csprojResolveAssemblyReference.cache
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\obj\Debug\SCVE.Testes.dll
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\obj\Debug\SCVE.Testes.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\SCVE.Negocio.Aplicacao.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\SCVE.Negocio.Aplicacao.pdb
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\roslyn\csc.exe
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\roslyn\csc.exe.config
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\roslyn\csc.rsp
@@ -68,5 +70,3 @@ C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\roslyn\vbc.exe.config
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\roslyn\vbc.rsp
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\roslyn\VBCSCompiler.exe
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\roslyn\VBCSCompiler.exe.config
-C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\SCVE.Negocio.Aplicacao.dll
-C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\SCVE.Negocio.Aplicacao.pdb
