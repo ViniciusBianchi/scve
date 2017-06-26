@@ -9,10 +9,9 @@ namespace SCVE.Negocio.Entidades
     public class Administrador
     {
         public virtual int AdministradorId { get; set; }
-        public virtual String Login { get; set; }
+        public virtual String Email { get; set; }
         public virtual String Senha { get; set; }
         public virtual String Nome { get; set; }
-        public virtual String Cpf { get; set; }
 
         #region Comparar Membros
         public override bool Equals(object obj)

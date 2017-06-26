@@ -10,8 +10,6 @@ namespace SCVE.Negocio.Entidades
     {
         public virtual int InstituicaoEnsinoId { get; set; }
         public virtual string Nome { get; set; }
-        public virtual int Nivel { get; set; }
-        public virtual bool Status { get; set; }
 
         #region Comparar Membros
         public override bool Equals(object obj)

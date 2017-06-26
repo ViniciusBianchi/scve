@@ -10,10 +10,10 @@ namespace SCVE.Negocio.Entidades
     {
         public virtual int CandidatoId { get; set; }
         public virtual string Nome { get; set; }
-        public virtual string CodigoAutenticacao { get; set; }
+        public virtual Guid CodigoAutenticacao { get; set; }
         public virtual string Cpf { get; set; }
-        public virtual DateTime DtNascimento { get; set; }
-        public virtual int? Sexo { get; set; }
+        public virtual DateTime DataNascimento { get; set; }
+        public virtual bool Sexo { get; set; }
         public virtual string Endereco { get; set; }
         public virtual string Bairro { get; set; }
         public virtual Cidade Cidade { get; set; }
@@ -34,7 +34,7 @@ namespace SCVE.Negocio.Entidades
         public virtual DateTime DataCadastro { get; set; }
         public virtual DateTime DataAlteracao { get; set; }
         public virtual IList<NecessidadeEspecial> NecessidadesEspeciais { get; set; }
-        public virtual IList<ExperienciaProfissional> ExperienciaProfissional { get; set; }
+        public virtual IList<ExperienciaProfissional> ExperienciasProfissionais { get; set; }
         public virtual IList<OutroCurso> OutrosCursos { get; set; }
         public virtual InstituicaoEnsino InstituicaoEnsino { get; set; }
         public virtual AreaAtuacao AreaAtuacao { get; set; }
