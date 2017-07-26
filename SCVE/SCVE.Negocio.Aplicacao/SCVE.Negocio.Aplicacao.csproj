@@ -40,10 +40,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IAdministradorAppService.cs" />
+    <Compile Include="Interfaces\IAreaAtuacaoAppService.cs" />
     <Compile Include="Interfaces\ICandidatoAppService.cs" />
+    <Compile Include="Interfaces\ICidadeAppService.cs" />
+    <Compile Include="Interfaces\IExperienciaProfissionalAppService.cs" />
+    <Compile Include="Interfaces\IInstituicaoEnsinoAppService.cs" />
+    <Compile Include="Interfaces\INecessidadeEspecialAppService.cs" />
+    <Compile Include="Interfaces\IOutroCursoAppService.cs" />
+    <Compile Include="Interfaces\IRacaAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicosAplicacao\AdministradorAppService.cs" />
+    <Compile Include="ServicosAplicacao\AreaAtuacaoAppService.cs" />
     <Compile Include="ServicosAplicacao\CandidatoAppService.cs" />
+    <Compile Include="ServicosAplicacao\CidadeAppService.cs" />
+    <Compile Include="ServicosAplicacao\ExperienciaProfissionalAppService.cs" />
+    <Compile Include="ServicosAplicacao\InstituicaoEnsinoAppService.cs" />
+    <Compile Include="ServicosAplicacao\NecessidadeEspecialAppService.cs" />
+    <Compile Include="ServicosAplicacao\OutroCursoAppService.cs" />
+    <Compile Include="ServicosAplicacao\RacaAppService.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SCVE.Negocio.Entidades\SCVE.Negocio.Entidades.csproj">
+      <Project>{c1e68000-0b45-4a42-a37d-687a16d8decf}</Project>
+      <Name>SCVE.Negocio.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SCVE.Persistencia\SCVE.Persistencia.csproj">
+      <Project>{dda6ecd6-f895-423e-b395-be34f5b8a21c}</Project>
+      <Name>SCVE.Persistencia</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
