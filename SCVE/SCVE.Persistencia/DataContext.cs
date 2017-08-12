@@ -121,6 +121,7 @@ namespace SCVE.Persistencia
             modelBuilder.Entity<Raca>().Property(c => c.Descricao).HasMaxLength(50).IsRequired();
             #endregion
 
+            // Verificar antes de rodar
             #region Definição de Relacionamentos e Deleção em Cascata
             // A chave estrangeira para a tabela NecessidadeEspecial - CandidatoId
             modelBuilder.Entity<NecessidadeEspecial>().HasRequired(c => c.Candidato)

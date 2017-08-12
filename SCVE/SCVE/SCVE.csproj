@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
@@ -64,6 +70,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -226,6 +233,14 @@
     <ProjectReference Include="..\SCVE.Negocio.Aplicacao\SCVE.Negocio.Aplicacao.csproj">
       <Project>{987bb193-49da-41e4-8778-f25eaccc8550}</Project>
       <Name>SCVE.Negocio.Aplicacao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SCVE.Negocio.Componente\SCVE.Negocio.Componente.csproj">
+      <Project>{e960bfdd-08de-4b14-95b3-e5ddf69f655d}</Project>
+      <Name>SCVE.Negocio.Componente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SCVE.Negocio.Entidades\SCVE.Negocio.Entidades.csproj">
+      <Project>{c1e68000-0b45-4a42-a37d-687a16d8decf}</Project>
+      <Name>SCVE.Negocio.Entidades</Name>
     </ProjectReference>
     <ProjectReference Include="..\SCVE.Persistencia\SCVE.Persistencia.csproj">
       <Project>{dda6ecd6-f895-423e-b395-be34f5b8a21c}</Project>

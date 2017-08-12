@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SCVE.Negocio.Aplicacao.Interfaces
 {
-    class IAreaAtuacaoAppService
+    public interface IAreaAtuacaoAppService
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SCVE.Negocio.Aplicacao.ServicosAplicacao
 {
-    class AdministradorAppService
+    public class AdministradorAppService
     {
     }
 }

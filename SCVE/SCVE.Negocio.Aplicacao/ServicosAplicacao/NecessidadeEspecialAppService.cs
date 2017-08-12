@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SCVE.Negocio.Aplicacao.ServicosAplicacao
 {
-    class NecessidadeEspecialAppService
+    public class NecessidadeEspecialAppService
     {
     }
 }
