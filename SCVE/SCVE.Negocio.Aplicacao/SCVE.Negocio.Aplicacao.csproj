@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +49,7 @@
     <Compile Include="Interfaces\ICidadeAppService.cs" />
     <Compile Include="Interfaces\IExperienciaProfissionalAppService.cs" />
     <Compile Include="Interfaces\IInstituicaoEnsinoAppService.cs" />
+    <Compile Include="Interfaces\ILoginAppService.cs" />
     <Compile Include="Interfaces\INecessidadeEspecialAppService.cs" />
     <Compile Include="Interfaces\IOutroCursoAppService.cs" />
     <Compile Include="Interfaces\IRacaAppService.cs" />
@@ -56,6 +60,7 @@
     <Compile Include="ServicosAplicacao\CidadeAppService.cs" />
     <Compile Include="ServicosAplicacao\ExperienciaProfissionalAppService.cs" />
     <Compile Include="ServicosAplicacao\InstituicaoEnsinoAppService.cs" />
+    <Compile Include="ServicosAplicacao\LoginAppService.cs" />
     <Compile Include="ServicosAplicacao\NecessidadeEspecialAppService.cs" />
     <Compile Include="ServicosAplicacao\OutroCursoAppService.cs" />
     <Compile Include="ServicosAplicacao\RacaAppService.cs" />

@@ -161,9 +161,6 @@ namespace SCVE.Persistencia
 
             #endregion
 
-            #region CRUD Candidato
-
-            #endregion
         }
     }
 }
