@@ -161,7 +161,24 @@ namespace SCVE.Persistencia
 
 
             #endregion
-
         }
+
+        #region Métodos de Candidato
+        public Candidato BuscarDadosCandidato(string cpf)
+        {
+            try
+            {
+                var candidatos = from Candidato in Candidatos
+                                where Candidato.Cpf == cpf
+                                select Candidato;
+
+                return candidatos.FirstOrDefault();
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
     }
 }
