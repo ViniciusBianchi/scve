@@ -8,3 +8,8 @@ C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\obj\Debug\SCVE.Negocio.Comp
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\obj\Debug\SCVE.Negocio.Componente.dll
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\obj\Debug\SCVE.Negocio.Componente.pdb
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\bin\Debug\SCVE.Negocio.Componente.dll.config
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\bin\Debug\SCVE.Negocio.Entidades.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\bin\Debug\SCVE.Persistencia.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\bin\Debug\SCVE.Negocio.Entidades.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\bin\Debug\SCVE.Persistencia.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Componente\bin\Debug\SCVE.Persistencia.dll.config

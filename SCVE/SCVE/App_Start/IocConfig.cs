@@ -18,6 +18,7 @@ namespace SCVE.App_Start
             IKernel kernel = new StandardKernel();
 
             kernel.Bind<ICandidatoAppService>().To<CandidatoAppService>();
+            kernel.Bind<ILoginAppService>().To<LoginAppService>();
 
             //Verifica se Membership provider é do Administrador ou do Candidato           
             //if (Membership.Provider.GetType() == typeof(FabricaMembershipProvider))

@@ -1,5 +1,4 @@
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Entidades\bin\Debug\SCVE.Negocio.Entidades.dll
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Entidades\bin\Debug\SCVE.Negocio.Entidades.pdb
-C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Entidades\obj\Debug\SCVE.Negocio.Entidades.csprojResolveAssemblyReference.cache
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Entidades\obj\Debug\SCVE.Negocio.Entidades.dll
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Negocio.Entidades\obj\Debug\SCVE.Negocio.Entidades.pdb

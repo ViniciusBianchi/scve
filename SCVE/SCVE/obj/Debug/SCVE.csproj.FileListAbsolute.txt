@@ -80,3 +80,15 @@ C:\Users\vinic\TCC\scve\SCVE\SCVE\obj\Debug\SCVE.dll
 C:\Users\vinic\TCC\scve\SCVE\SCVE\obj\Debug\SCVE.pdb
 C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\SCVE.Negocio.Aplicacao.dll
 C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\SCVE.Negocio.Aplicacao.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\EntityFramework.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\EntityFramework.SqlServer.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\SCVE.Negocio.Componente.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\SCVE.Negocio.Entidades.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\SCVE.Persistencia.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\SCVE.Negocio.Componente.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\SCVE.Negocio.Componente.dll.config
+C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\SCVE.Negocio.Entidades.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\SCVE.Persistencia.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\SCVE.Persistencia.dll.config
+C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\EntityFramework.xml
+C:\Users\vinic\TCC\scve\SCVE\SCVE\bin\EntityFramework.SqlServer.xml

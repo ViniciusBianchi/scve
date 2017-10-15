@@ -44,6 +44,16 @@ C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\obj\Debug\SCVE.Testes.dll
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\obj\Debug\SCVE.Testes.pdb
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\SCVE.Negocio.Aplicacao.dll
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\SCVE.Negocio.Aplicacao.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\SCVE.Persistencia.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\SCVE.Negocio.Entidades.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\SCVE.Negocio.Componente.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\log4net.dll
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\SCVE.Persistencia.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\SCVE.Persistencia.dll.config
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\SCVE.Negocio.Entidades.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\SCVE.Negocio.Componente.pdb
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\SCVE.Negocio.Componente.dll.config
+C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\log4net.xml
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\roslyn\csc.exe
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\roslyn\csc.exe.config
 C:\Users\vinic\TCC\scve\SCVE\SCVE.Testes\bin\Debug\roslyn\csc.rsp

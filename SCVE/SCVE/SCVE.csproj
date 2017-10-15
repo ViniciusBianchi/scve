@@ -172,7 +172,20 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\candidato\candidato.css" />
+    <Content Include="Content\css\form-elements.css" />
+    <Content Include="Content\css\login\login.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\favicon\apple-touch-icon-114-precomposed.png" />
+    <Content Include="Content\favicon\apple-touch-icon-144-precomposed.png" />
+    <Content Include="Content\favicon\apple-touch-icon-57-precomposed.png" />
+    <Content Include="Content\favicon\apple-touch-icon-72-precomposed.png" />
+    <Content Include="Content\favicon\favicon.png" />
+    <Content Include="Content\favicon\walk-114-215501.png" />
+    <Content Include="Content\imagens\background_scve.jpg" />
+    <Content Include="Content\imagens\lápis-pequeno-20972766.jpg" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\font-awesome.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -201,6 +214,10 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Login\jquery-1.11.1.min.js" />
+    <Content Include="Scripts\Login\jquery.backstretch.min.js" />
+    <Content Include="Scripts\Login\login.js" />
+    <Content Include="Scripts\Login\scripts.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
@@ -220,13 +237,14 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Candidato\Index.cshtml" />
+    <Content Include="Views\Login\Index2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Administrador\" />
-    <Folder Include="Views\Candidato\" />
-    <Folder Include="Views\Login\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

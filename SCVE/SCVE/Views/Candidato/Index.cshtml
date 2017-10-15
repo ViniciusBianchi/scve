@@ -1,0 +1,925 @@
+﻿@using System.Linq;
+@*@model List<SCVE.Negocio.Aplicacao.ViewModel.CandidatoViewModel>*@
+
+
+
+@*@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}*@
+
+<div class="container">
+
+    <pagetitle>
+        <h10>Cadastro de Candidatos a Est&aacute;gio</h10>
+    </pagetitle>
+
+    <div class="body">
+
+        @using (Html.BeginForm("Index", "Candidato", FormMethod.Post, new { id = "formCandidato" }))
+        {
+            @Html.Hidden("hdnEmail", new { id = "hdnEmail", Value = @TempData["email"] })
+            TempData.Keep("email");
+
+
+        <!--DADOS PESSOAIS-->
+            <div class="frame">
+
+                <div>
+                    <p class="sessionName">Dados Pessoais</p>                    
+                </div>
+
+                <div class="form-group">
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="nomeCand"><span class="red">*</span>Nome</label>
+
+                                    <input class="tam100" id="nomeCand" name="nomeCand" type="text" maxlength="70" value="" required />
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol tam25">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="cpfCand"><span class="red">*</span>CPF</label>
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol tam25">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="dtNascCand"><span class="red">*</span>Data de Nascimento</label>
+
+                                    <input class="dateField tam100" id="dtNascCand" name="dtNascCand" type="text" value="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea tam95">
+
+                            <div class="defaultCol tam50">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="emailCand"><span class="red">*</span>Email</label>
+
+                                    <input class="tam100" id="emailCand" name="emailCand" type="text" maxlength="100" value="">
+
+                                    @if (TempData["email"] != "")
+                                    {
+                                        <input class="tam100" id="emailCand" name="emailCand" type="text" maxlength="14" value="@TempData["email"]" disabled />
+                                    }
+                                    else
+                                    {
+                                        <input class="tam100" id="emailCand" name="emailCand" type="text" maxlength="14" value="@TempData["email"]" />
+                                    }
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="generoCand">G&ecirc;nero</label>
+
+                                    <select class="tam100" id="generoCand" name="generoCand">
+
+                                        <option></option>
+                                        <option value="1">MASCULINO</option>
+                                        <option value="2">FENININO</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol tam25">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="selectRaca"><span class="red">*</span>Ra&ccedil;a</label>
+
+                                    <select class="tam100" id="selectRaca" name="selectRaca">
+
+                                        <option value="-1"></option>
+
+                                        @*@foreach (var raca in ViewBag.Raca)
+                                        {
+                                            <option value="@raca.CodRaca">@raca.DescricaoRaca</option>
+                                        }*@
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="contPrefCand"><span class="red">*</span>Contato Preferencial</label>
+
+                                    <select id="contPrefCand" name="contPrefCand">
+
+                                        <option value="0"></option>
+                                        <option value="1">TELEFONE RESIDENCIAL</option>
+                                        <option value="2">TELEFONE CELULAR</option>
+                                        <option value="3">E-MAIL</option>
+                                        <option value="4">ENDERE&Ccedil;O</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="telFixo">Telefone Residencial</label>
+
+                                    <input id="telFixo" name="telFixo" type="text" maxlength="15" />
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="telCel">Telefone Celular</label>
+
+                                    <input id="telCel" name="telCel" type="text" maxlength="15" />
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        <!--MEU ENDERECO-->
+            <div class="frame">
+
+                <div>
+                    <p class="sessionName">Meu Endere&ccedil;o</p>
+                </div>
+
+                <div class="defaultBox">
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="endereco"><span class="red">*</span>Endereço</label>
+
+                                    <input id="endereco" name="endereco" type="text" maxlength="150" />
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="bairro"><span class="red">*</span>Bairro</label>
+
+                                    <input id="bairro" name="bairro" type="text" maxlength="40" value="" />
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="cep">CEP</label>
+
+                                    <input id="cep" name="cep" type="text" maxlength="10" value="" />
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="estado"><span class="red">*</span>Estado</label>
+
+                                    <select id="estado" name="estado">
+
+                                        <option value="00"></option>
+
+                                        @*@foreach (var estado in ViewBag.Uf)
+                                        {
+                                            <option value="@estado">@estado</option>
+                                        }*@
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="cidade"><span class="red">*</span>Cidade</label>
+
+                                    <select id="cidade" name="cidade"></select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        <!--INFORMACOES DE ESTAGIO-->
+            <div class="frame">
+
+                <div>
+                    <p class="sessionName">Informa&ccedil;&otilde;es para Est&aacute;gio</p>
+                </div>
+
+                <div class="defaultBox">
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="disp"><span class="red">*</span>Disponibilidade</label>
+
+                                    <select id="disp" name="disp">
+
+                                        <option value="0"></option>
+                                        <option value="1">MANH&Atilde;</option>
+                                        <option value="2">TARDE</option>
+                                        <option value="3">AMBOS</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="areaatuacao"><span class="red">*</span>&Aacute;rea de Atua&ccedil;&atilde;o</label>
+
+                                    <select id="areaatuacao" name="areaatuacao">
+
+                                        <option value="00"></option>
+                                        @*@foreach (var areas in ViewBag.AreasInteresse)
+                                        {
+                                            <option value="@areas.Codigo">@areas.NomeArea</option>
+                                        }*@
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="nivelInst"><span class="red">*</span>N&iacute;vel de Est&aacute;gio</label>
+
+                                    <select id="nivelInst" name="nivelInst">
+
+                                        <option value="0"></option>
+                                        <option value="1">SUPERIOR</option>
+                                        <option value="2">TÉCNICO</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="instituicaoEnsino"><span class="red">*</span>Institui&ccedil;&atilde;o de Ensino</label>
+
+                                    <select id="instituicaoEnsino" name="instituicaoEnsino"></select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="periodoAtual"><span class="red">*</span>Per&iacute;odo Atual</label>
+
+                                    <select id="periodoAtual" name="periodoAtual">
+
+                                        <option value="00"></option>
+                                        @for (int i = 1; i < 13; i++)
+                                        {
+                                            <option value="@i">@i</option>
+                                        }
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="nomeCurso"><span class="red">*</span>Nome do Curso</label>
+
+                                    <input id="nomeCurso" name="nomeCurso" type="text" maxlength="150" value="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="dtFimCurso"><span class="red">*</span>Previsão de Gradua&ccedil;&atilde;o</label>
+
+                                    <input class="dateField" id="dtFimCurso" name="dtFimCurso" type="text" value="" />
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        <!--IDIOMAS-->
+            <div class="frame">
+
+                <div>
+                    <p class="sessionName">Idiomas</p>
+                </div>
+
+                <div class="defaultBox">
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="ingles"><span class="red">*</span>Ingl&ecirc;s</label>
+
+                                    <select id="ingles" name="ingles">
+
+                                        <option value="0" selected>NENHUM</option>
+                                        <option value="1">B&Aacute;SICO</option>
+                                        <option value="2">INTERMEDI&Aacute;RIO</option>
+                                        <option value="3">AVAN&Ccedil;ADO</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="frances"><span class="red">*</span>Franc&ecirc;s</label>
+
+                                    <select id="frances" name="frances">
+
+                                        <option value="0" selected>NENHUM</option>
+                                        <option value="1">B&Aacute;SICO</option>
+                                        <option value="2">INTERMEDI&Aacute;RIO</option>
+                                        <option value="3">AVAN&Ccedil;ADO</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="espanhol"><span class="red">*</span>Espanhol</label>
+
+                                    <select id="espanhol" name="espanhol">
+
+                                        <option value="0" selected>NENHUM</option>
+                                        <option value="1">B&Aacute;SICO</option>
+                                        <option value="2">INTERMEDI&Aacute;RIO</option>
+                                        <option value="3">AVAN&Ccedil;ADO</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        <!--OUTROS CURSOS-->
+            <div class="frame">
+
+                <div>
+                    <p class="sessionName">Outros Cursos</p>
+                </div>
+
+                <div class="defaultBox">
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="nomeAddCurso" title="Nome do Curso">Nome do Curso</label>
+
+                                    <input id="nomeAddCurso" name="nomeAddCurso" type="text" value="" maxlength="150">
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="anoAddCurso" title="Ano de Conclus&atilde;o">Ano de Conclus&atilde;o</label>
+
+                                    <input id="anoAddCurso" name="anoAddCurso" type="text" value="" maxlength="4">
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label>&nbsp;</label>
+
+                                    <div>
+
+                                        <!--ADICIONAR-->
+                                        <div class="longBtActionAdd posRight" id="btnAddOutrosCursos"></div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <table>
+
+                                        <thead>
+
+                                            <tr>
+
+                                                <td >
+                                                    Nome do Curso
+                                                </td>
+
+                                                <td>
+                                                    Ano de Conclus&atilde;o
+                                                </td>
+
+                                                <td class="resultAction">
+                                                    A&ccedil;&otilde;es
+                                                </td>
+
+                                            </tr>
+
+                                        </thead>
+
+                                        <tbody id="tblOutrosCursos">
+                                            <!--AQUI ENTRA TABLE COM VALORES GERADOS EM TEMPO DE EXECUÇÃO-->
+                                        </tbody>
+
+                                    </table>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        <!--EXPERIENCIA PROFISSIONAL-->
+            <div class="frame">
+
+                <div>
+                    <p class="sessionName">Experi&ecirc;ncia Profissional</p>
+                </div>
+
+                <div class="defaultBox">
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="nomeAddExp">Nome da Empresa</label>
+
+                                    <input id="nomeAddExp" name="nomeAddExp" type="text" maxlength="20" value="" />
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="funcaoAddExp">Fun&ccedil;&atilde;o Exercida</label>
+
+                                    <input id="funcaoAddExp" name="funcaoAddExp" type="text" maxlength="200" value="" />
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="dataAddExpInicio">Data de In&iacute;cio</label>
+
+                                    <input class="dateField" id="dataAddExpInicio" name="dataAddExpInicio" type="text" maxlength="10" value="" />
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="dataAddExpFim">Data de Fim</label>
+
+                                    <input class="dateField" id="dataAddExpFim" name="dataAddExpFim" type="text" maxlength="10" value="" />
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label>&nbsp;</label>
+
+                                    <div>
+
+                                        <!--ADICIONAR-->
+                                        <div class="longBtActionAdd posRight" id="btnAddExpProfissional"></div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <table>
+
+                                        <thead>
+
+                                            <tr>
+
+                                                <td>
+                                                    Nome da Empresa
+                                                </td>
+
+                                                <td>
+                                                    Fun&ccedil;&atilde;o Exercida
+                                                </td>
+
+                                                <td class="resultAction">
+                                                    Data de In&iacute;cio
+                                                </td>
+
+                                                <td class="resultAction">
+                                                    Data de Fim
+                                                </td>
+
+                                                <td class="resultAction">
+                                                    A&ccedil;&otilde;es
+                                                </td>
+
+                                            </tr>
+
+                                        </thead>
+
+                                        <tbody id="tblExpProfissional">
+                                            <!--AQUI ENTRA TABLE COM VALORES GERADOS EM TEMPO DE EXECUÇÃO-->
+                                        </tbody>
+
+                                    </table>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        <!--NECESSIDADES ESPECIAIS-->
+            <div class="frame">
+
+                <div>
+                    <p class="sessionName">Necessidades Especiais</p>
+                </div>
+
+                <div class="defaultBox">
+
+                    <div class="defaultRow">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper vPosMiddle">
+
+                                    <label class="labelForCheckbox" for="labelNecessidadeEspecial">
+
+                                        <input id="labelNecessidadeEspecial" name="labelNecessidadeEspecial" type="checkbox" value="" /> Sou portador de ao menos uma necessidade especial.
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="defaultRow" id="sessionNecessidadesEspeciais_form">
+
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label for="inputNecessidadeEspecial">Qual?</label>
+
+                                    <input id="inputNecessidadeEspecial" name="inputNecessidadeEspecial" type="text" maxlength="100" value="" disabled />
+
+                                </div>
+
+                            </div>
+
+                            <div class="defaultCol">
+
+                                <div class="defaultFieldWarper">
+
+                                    <label>&nbsp;</label>
+
+                                    <div>
+
+                                        <!--ADICIONAR-->
+                                        <div class="longBtActionAdd posRight invisible" id="btAdicionarNecessidadeEspecial"></div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="defaultRow invisible" id="tableNecessidadesEspeciais">
+
+                        <!--:: SESSION RESULT HEADER-->
+                        <div class="sessionGroup">
+
+                            <div class="defaultFieldWarper">
+
+                                <table>
+
+                                    <thead>
+
+                                        <tr>
+
+                                            <td>
+                                                Necessidade Especial
+                                            </td>
+
+                                            <td class="resultAction">
+                                                A&ccedil;&otilde;es
+                                            </td>
+
+                                        </tr>
+
+                                    </thead>
+
+                                    <tbody id="tblNecessidadeEspecial">
+                                        <!--AQUI ENTRA TABLE COM VALORES GERADOS EM TEMPO DE EXECUÇÃO-->
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </div> <!--END :: SESSION RESULT HEADER-->
+
+                </div>
+
+            </div>
+
+        <!--SALVAR-->
+            <div class="frame">
+
+                <div class="defaultBox">
+                    <div class="defaultRow">
+                        <div class="sessionRowUsebleArea">
+
+                            <div class="defaultCol">
+                                <div class="defaultFieldWarper"></div>
+                            </div>
+                            <div class="defaultCol">
+                                <div class="defaultFieldWarper">
+                                    <div>
+                                        <!-- SALVAR -->
+                                        <div class="longBtActionSave hPosCenter" id="btnSalvar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="defaultCol">
+                                <div class="defaultFieldWarper msgCamposObrigatorios posRight">
+                                    <p>* Campos obrigat&oacute;rios.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        }
+    </div>
+
+</div>
+
+@* -=+=- SCRIPTS -=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=- *@
+@*@Scripts.Render("~/Content/sys/js/candidato")*@
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/jquery")
+<script src="~/Content/js/shared/jquery.mask.min.js"></script>

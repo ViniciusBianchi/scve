@@ -31,8 +31,13 @@ namespace SCVE.Controllers
             _administradorAppService = administradorAppService;
         }
 
+        public LoginController()
+        {
+
+        }
+
         // GET: Login
-        public ActionResult Index()
+        public ActionResult Index2()
         {
             return View();
         }
@@ -124,6 +129,7 @@ namespace SCVE.Controllers
                             usuario.Identificacao = candidato.Cpf;
 
                             CriarCookieCandidato(cpf, usuario);
+                            return Json(new { Status = HttpStatusCode.OK, Codigo = 1 });
                         }
                         else
                         {
